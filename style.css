@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/*##########################----FONTES----#######################*/
+
+h1 {
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.1rem;
+    text-align: center;
+    
+}
+
+button {
+    font-family: 'Manrope';
+    font-weight: 800;
+    border: none;
+    border-radius: 0.6rem;
+    border: 1px solid #8257E5;
+    
+    
+}
+
+
