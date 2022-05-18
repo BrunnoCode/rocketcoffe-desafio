@@ -1,28 +1,65 @@
 * {
-    margin: 0;
-    font-size: 62.5%;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color:hsla(0, 0%, 0%, 1);
+  
+
+ 
 }
+
+/*##########################----VAR-CORES----#######################*/
+:root {
+   --text-dark: hsl(240, 7%, 68%);
+   --text-phrase: hsl(0, 0%, 100%);
+
+}
+
 
 /*##########################----FONTES----#######################*/
 
 h1 {
-    font-family: 'Manrope';
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 4.1rem;
-    text-align: center;
-    
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+  margin: 0;
+  color: var(--text-phrase);
+  
+}
+
+.nav-list {
+    color: var(--text-dark);
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    letter-spacing: 0.3rem;
+    margin-left: 3.2rem;
 }
 
 button {
-    font-family: 'Manrope';
-    font-weight: 800;
-    border: none;
-    border-radius: 0.6rem;
-    border: 1px solid #8257E5;
-    
-    
+  font-family: "Manrope";
+  font-weight: 800;
+  border: none;
+  border-radius: 0.6rem;
+  border: 1px solid #8257e5;
 }
 
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
 
+.mobile-menu {
+    cursor: pointer;
+}
+
+.mobile-menu #line1 {
+ width: 4rem;
+ background: #fff;
+}
