@@ -1,65 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
   font-size: 62.5%;
-  background-color:hsla(0, 0%, 0%, 1);
-  
-
- 
+  background-color: rgb(248, 248, 248);
 }
 
 /*##########################----VAR-CORES----#######################*/
 :root {
-   --text-dark: hsl(240, 7%, 68%);
-   --text-phrase: hsl(0, 0%, 100%);
-
+  --text-dark: hsl(240, 7%, 68%);
+  --text-phrase: hsl(0, 0%, 100%);
 }
 
+/*##########################----LINKS----#######################*/
 
-/*##########################----FONTES----#######################*/
+a {
+  color: black; /*-------COR DA FONTE DOS LINKS MENU------*/
+  text-decoration: none;
+  font-family: 'Manrope';
+}
 
-h1 {
-  font-family: "Manrope";
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 4.1rem;
-  text-align: center;
-  margin: 0;
-  color: var(--text-phrase);
+a:hover {
+  background: hsla(240, 9%, 89%, 1%);
+  weight: 700;
+  font-size: 0.5rem;
+  transition: 200ms;
+}
+
+/*##########################----HEADER---#######################*/
+
+#header {
+  box-sizing: border-box;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  background: hsla(0, 0%, 0%, 1);
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+}
+
+@media (max-width: 600px) {
+  #btn-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: none;
   
-}
-
-.nav-list {
-    color: var(--text-dark);
-    display: flex;
-    list-style: none;
-}
-
-.nav-list li {
-    letter-spacing: 0.3rem;
-    margin-left: 3.2rem;
-}
-
-button {
-  font-family: "Manrope";
-  font-weight: 800;
-  border: none;
-  border-radius: 0.6rem;
-  border: 1px solid #8257e5;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 8vh;
-}
-
-.mobile-menu {
-    cursor: pointer;
-}
-
-.mobile-menu #line1 {
- width: 4rem;
- background: #fff;
+  }
 }
