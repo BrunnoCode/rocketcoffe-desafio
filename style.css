@@ -15,17 +15,19 @@ ul {
 /*##########################----LINKS----#######################*/
 
 a {
-  color: black; /*-------COR DA FONTE DOS LINKS MENU------*/
+  color: rgb(238, 224, 224); /*-------COR DA FONTE DOS LINKS MENU------*/
   text-decoration: none;
   font-family: 'Manrope';
 }
 
 a:hover {
   background: hsla(240, 9%, 89%, 1%);
+  -webkit-text-stroke: .5px hsl(240, 9%, 89%);
   weight: 700;
   font-size: 0.5rem;
-  transition: 200ms;
+  transition: 200ms; 
 }
+
 
 /*##########################----HEADER---#######################*/
 
@@ -51,6 +53,7 @@ a:hover {
 }
 
 #btn-mobile {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -59,7 +62,29 @@ a:hover {
   }
 
   #menu {
-    display: none;
-  
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: hsla(0, 0%, 0%, 1);
+    transition: .6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
+  
+  #nav.active #menu {
+     height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+   } 
+
+   #menu a {
+     padding: 1rem 0;
+     margin: 0 1rem;
+     border-bottom: 1px solid hsl(240, 6%, 17%)
+   }
+  
 }
