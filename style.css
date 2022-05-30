@@ -1,10 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
 body
  {
   margin: 0px;
   padding: 0px;
   font-size: 62.5%;
-  background-color: rgb(0, 0, 0);
-}
+  background-image: -moz-radial-gradient(circle, top left, purple);
+}  
+
+
 
 /*##########################----VAR-CORES----#######################*/
 
@@ -34,7 +43,8 @@ a:hover {
   align-items: center;
   padding: 1rem;
   flex-direction:column;
-  background: hsl(0, 0%, 0%);
+  background-image: radial-gradient(circle at right -13px, #996DFF -40%, #000000 50%);
+  justify-content: space-between;
 }
 
 #menu {
@@ -86,10 +96,14 @@ a:hover {
 
   }
 
+ 
+
 @media (max-width: 600px) {
 
   #header {
     padding: 20px;
+    background: #000000;
+    border-bottom: 1px solid #29292E;
   }
 
 
@@ -115,7 +129,7 @@ a:hover {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 1px solid hsl(240, 13%, 91%);
+    border-bottom: 1px solid #29292E;
   }
 
   #btn-mobile {
@@ -172,6 +186,7 @@ a:hover {
 
   .logo-desktop {
     display: none;
+    
   }
 
   .logo-mobile {
