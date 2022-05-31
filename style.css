@@ -10,8 +10,11 @@ body
   margin: 0px;
   padding: 0px;
   font-size: 62.5%;
-  background-image: -moz-radial-gradient(circle, top left, purple);
+  background-image: radial-gradient(circle at right -13px, #996DFF -40%, #000000 50%);
+
 }  
+
+  
 
 
 
@@ -36,6 +39,33 @@ a:hover {
 
 /*##########################----HEADER---#######################*/
 
+.great-coffee {
+  width: 100%;
+  height: auto;
+  max-width: 548px;
+}
+
+.section-img {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.copos-cafe {
+  width: 75%;
+  height: auto;
+  max-width: 500px;
+}
+
+.gradient {
+  display: flex;
+  align-self: ;
+  
+}
+
 #header {
   box-sizing: border-box;
   display: flex;
@@ -43,7 +73,7 @@ a:hover {
   align-items: center;
   padding: 1rem;
   flex-direction:column;
-  background-image: radial-gradient(circle at right -13px, #996DFF -40%, #000000 50%);
+  background: transparent;
   justify-content: space-between;
 }
 
@@ -83,23 +113,47 @@ a:hover {
     align-self: end;
 
   }
-  #header .linha:last-of-type button {
+  #header .linha:last-of-type button  {
     background: none;
     border-radius: 6px;
     border: 1px solid hsl(258, 73%, 62%);
     font-family: 'Manrope';
-    font-size: 11px;
+    font-size: 9px;
     color: white;
-    padding:11px 38px;
+    padding:7px 21px;
     cursor: pointer;
-    
+
 
   }
+
+.baner-mobile {
+  display: none;
+
+}
+
+
 
  
 
 @media (max-width: 600px) {
 
+  
+  .baner-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .baner-mobile button {
+    background: transparent;
+    border: 1px solid hsl(258, 73%, 62%);
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 11px;
+    font-family: 'Manrope';
+    
+  }
+  
   #header {
     padding: 20px;
     background: #000000;
