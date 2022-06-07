@@ -22,27 +22,32 @@ body
 
 /*##########################----LINKS----#######################*/
              /*-------COR DA FONTE DOS LINKS MENU------*/
-a {
+ a {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3.1rem;
   color: rgb(238, 224, 224); 
   text-decoration: none;
   font-family: 'Manrope';
-  font-size: 0.7rem;
+  font-size: 1.5rem;
 }
+
+
 
 a:hover {
   background: hsla(240, 9%, 89%, 1%);
   -webkit-text-stroke: 0.5px hsl(240, 9%, 89%);
-  weight: 700;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: 200ms;
 }
+  
 
 /*##########################----HEADER---#######################*/
 
 .great-coffee {
   width: 100%;
   height: auto;
-  max-width: 548px;
+  max-width: 1024px;
 }
 
 .section-img {
@@ -51,13 +56,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 7rem;
   
 }
 
 .copos-cafe {
-  width: 75%;
+  width: 90%;
   height: auto;
-  max-width: 500px;
+  max-width: 1024px;
+  padding-top: 7%;
 }
 
 .gradient {
@@ -80,7 +87,7 @@ a:hover {
 #menu {
   display: flex;
   list-style: none;
-  gap: 0.5rem;
+  gap: 3.5rem;
 }
 
 #menu a {
@@ -105,8 +112,10 @@ a:hover {
     margin-top: -50px;
   }
   #header .linha:first-of-type {
-    align-self: baseline;
+    
     margin-top: 0;
+    margin-right: 50%;
+    
 
   }
   #header .linha:last-of-type {
@@ -131,6 +140,10 @@ a:hover {
 
 }
 
+.baner-mobile button {
+  display: none;
+}
+
 
 
  
@@ -138,9 +151,22 @@ a:hover {
 @media (max-width: 600px) {
 
   
+   button {
+    width: 174.12px;
+    height: 35px;
+    border: 1px solid #8257E5;
+    border-radius: 6px;
+   }
+
+  
+
   .baner-mobile {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 88px;
+    padding-bottom: 98px;
+    text-align: center;
   }
 
   .baner-mobile button {
@@ -151,6 +177,18 @@ a:hover {
     display: block;
     font-size: 11px;
     font-family: 'Manrope';
+    
+  }
+
+  .baner-mobile h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    padding-bottom: 88px;
+    color: #ffff;
     
   }
   
